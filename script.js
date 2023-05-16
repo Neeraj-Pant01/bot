@@ -86,6 +86,6 @@ btn.addEventListener('click',()=>{
     container.appendChild(msg);
     setTimeout(() => {
         reply();
-    }, 1500);
     text.value = " ";
+    }, 1500);
 });
