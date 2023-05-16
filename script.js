@@ -14,24 +14,20 @@ replydiv.innerHTML = value;
 container.appendChild(replydiv);
 }
 
-// createReplyDiv(`If you prefer a menu with options, simply type 'hii'.<br>
-// If you already know the option you want to choose, feel free to send it directly.`)
 
+createReplyDiv("How may I assist you today ?")
+createReplyDiv(`If you prefer a menu with options, simply type 'hii'.<br>
+If you already know the option you want to choose, feel free to send it directly.`)
 
 
 const reply = () =>{
     let textValue = text.value;
 
-    if(textValue.includes("hi")){
-        createReplyDiv("How may I assist you today ?")
+    if(textValue.includes("hii")){
         createReplyDiv(`send:- <br>
         send 1 For moving to homepage <br> send 2 For courses <br> send 3 For Contact Us <br> send 4 For Team Info <br> Send 5 For Exam Details <br> send 6 For Study Materials <br> send 7 To View Selections <br> send 8 To Read Blogs`)
     }
 
-    // if(textValue.includes('your name')){
-    //     createReplyDiv("my name is alisa! what is yours ?")
-
-    // }
     else if(textValue.includes("1")){  
         createReplyDiv("Redirecting to the homepage. Please wait...")
         window.location.href = 'https://www.sciastra.com/'
